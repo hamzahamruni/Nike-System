@@ -294,8 +294,6 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`id`, `Name`, `User_Name`, `Password`, `Priv`, `del`) VALUES
 (1, 'Admin', 'admin', '12345', 'A', 0),
-(2, 'Staff', 'staff', '12345', 'S', 0),
-(3, 'dfsdfs', 'sdfsf', '45345', 'A', 0);
 
 -- --------------------------------------------------------
 
@@ -319,12 +317,8 @@ CREATE TABLE IF NOT EXISTS `user_accounts` (
 --
 
 INSERT INTO `user_accounts` (`id_account`, `account_name`, `phone_number`, `salary`, `account_char`, `del`) VALUES
-(1, 'Ø¹Ø¨Ø¯Ùˆ Ù…Ø§Ø²Ù†', 921111111, NULL, 'SU', 0),
-(2, 'Ø­Ù…Ø²Ø© Ø­Ù…Ø²Ø©', 922222222, NULL, 'SU', 0),
-(3, 'Ù…Ø­Ù…Ø¯ Ø¹Ù„ÙŠ', 923333333, NULL, 'C', 0),
-(4, 'Ù…Ø­Ù…Ø¯ Ø§Ø­Ù…Ø¯', 924444444, NULL, 'C', 0),
-(5, 'Ø¹Ù„ÙŠ Ù‚Ø¯ÙˆØ±', 912222222, '1000', 'S', 0),
-(6, 'Ø§Ø³Ù…Ø§Ø¹ÙŠÙ„ Ù…Ø­Ù…Ø¯', 911111111, '600', 'S', 0);
+(1, 'hamza', 921111111, NULL, 'SU', 0),
+
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
