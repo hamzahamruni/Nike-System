@@ -194,7 +194,7 @@ function Form($conn)
 																
 																if($view_account->account_char=='C' )
 																{
-																	if(!($C || $S || $SE ))
+																	if(!($C || $S  ))
 																	{
 																	?>
 																		</optgroup>
@@ -219,7 +219,7 @@ function Form($conn)
 																}
 																if($view_account->account_char=='S') 
 																{
-																	if(!($C || $S || $SE ))
+																	if(!($C || $S  ))
 																	{
 																	?>
 																		</optgroup>
@@ -245,7 +245,7 @@ function Form($conn)
 																	
 																if($view_account->account_char=='SU')
 																{
-																	if(!($C || $S || $SE ))
+																	if(!($C || $S  ))
 																	{
 																	?>
 																		</optgroup>
@@ -720,7 +720,7 @@ else
 		<div class="container">
 			 
 
-          <b class="copyright">&copy; <? echo gmdate("Y", time() + 2 * 3600);?> Nike - Sales System </b> is Programmed by Abdullah Mazen.
+          <b class="copyright">&copy; <? echo gmdate("Y", time() + 2 * 3600);?> Nike - Sales System </b> is Programmed by Hamza Hamruni.
 		</div>
 	</div>
 

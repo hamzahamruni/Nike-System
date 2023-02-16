@@ -163,7 +163,7 @@ function check($conn)
 				
 					<ul class="nav pull-right">
 						<li><a href="https://www.facebook.com/hamza.hamroni.1/" target="_blank" >
-							<b class="copyright">Nike System </b> is Programmed by Abdullah Mazen.
+							<b class="copyright">Nike System </b> is Programmed by Hamza Hamruni.
 						</a></li>
 					</ul>
 				</div><!-- /.nav-collapse -->
@@ -189,7 +189,7 @@ function check($conn)
 		<div class="container">
 			 
 
-          <b class="copyright">&copy; <? echo gmdate("Y", time() + 2 * 3600);?> Nike - Sales System </b> is Programmed by Abdullah Mazen.
+          <b class="copyright">&copy; <? echo gmdate("Y", time() + 2 * 3600);?> Nike - Sales System </b> is Programmed by Hamza Hamruni.
 		</div>
 	</div>
 	<script src="scripts/jquery-1.9.1.min.js" type="text/javascript"></script>

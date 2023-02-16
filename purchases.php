@@ -171,7 +171,7 @@ if(!$_SESSION['Logout'])
         <!--/.wrapper-->
         <div class="footer">
             <div class="container">
-                <b class="copyright">&copy; <? echo gmdate("Y", time() + 2 * 3600);?> Nike - Sales System </b> is Programmed by Abdullah Mazen.
+                <b class="copyright">&copy; <? echo gmdate("Y", time() + 2 * 3600);?> Nike - Sales System </b> is Programmed by Hamza Hamruni.
             </div>
         </div>
         <script src="scripts/jquery-1.9.1.min.js" type="text/javascript"></script>

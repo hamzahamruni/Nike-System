@@ -338,7 +338,7 @@ if($_SESSION['Logout']==False)
 		<div class="container">
 			 
 
-			<b class="copyright">&copy; 2018 Nike Saraya - Sales System </b> is Programmed by Abdullah Mazen.
+			<b class="copyright">&copy; 2018 Nike Saraya - Sales System </b> is Programmed by Hamza Hamruni.
 		</div>
 	</div>
 

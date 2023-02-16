@@ -106,7 +106,7 @@ function View($conn)
 		AND s.del='0' AND  s.id_user='$id_user' 
 		AND  ( s.date>='$year-$month-$day 00:00:01' AND s.date<='$year-$month-$day 23:59:59') 
 		ORDER BY s.date,s.Id_sale  ";
-		echo $sql_search_Bill_Data;
+		// echo $sql_search_Bill_Data;
 		
 		$Search_Data_Bill=$conn->query($sql_search_Bill_Data);
 		?>
@@ -369,7 +369,7 @@ if(!$_SESSION['Logout'])
 		<div class="container">
 			 
 
-          <b class="copyright">&copy; <? echo gmdate("Y", time() + 2 * 3600);?> Nike - Sales System </b> is Programmed by Abdullah Mazen.
+          <b class="copyright">&copy; <? echo gmdate("Y", time() + 2 * 3600);?> Nike - Sales System </b> is Programmed by Hamza Hamruni.
 		</div>
 	</div>
 
