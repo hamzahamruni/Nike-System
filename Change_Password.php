@@ -169,7 +169,7 @@ function Update($conn)
 				alert("Password Changed Successfully");
 		</script>
 		<?
-		header('Location: http://localhost/Nike Saraya/Control%20Panel.%7b21EC2020-3AEA-1069-A2DD-08002B30309D%7d/Home.php');
+		header('Location: Home.php');
 
 
 	}	
@@ -189,68 +189,47 @@ if($_SESSION['Logout']==False)
 ?>
     <body>
 
-        <div class="navbar navbar-fixed-top">
+	<div class="navbar navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
 
                     <div class="nav-collapse collapse navbar-inverse-collapse">
                         <ul class="nav nav-icons"><br>
-						<img src="images/Nike.jpg" width=110 height=110  />
+						<img src="images/logo.jpg" width=70 height=70  />
                         </ul>
 						<ul class="nav nav-icons"><br>
-						
-						<img src="images/nike_saraya1.jpg" width=200 height=200  />
+						<img src="images/name.jpg" width=200 height=200  />
                         </ul>	
 						<ul class="nav nav-icons">
 						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<i class="menu-icon icon-time"></i>&nbsp;<? echo gmdate(" h:i A Y-m-d l ", time() + 2 * 3600);?>	
+						<i class="menu-icon icon-time"></i>&nbsp;<? echo gmdate(" h:i A Y-m-d l ", time() + 2 * 3600);?>					
 						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<i class="menu-icon icon-phone"></i>&nbsp; 0213341226 
+						<i class="menu-icon icon-phone"></i>&nbsp; 091xxxxxxx
                         </ul>
 
                         <ul class="nav pull-right">
                     
                             <li><br>
-								<? 
-								if($_SESSION['Priv']=='M')
-								{
-									?>
-										<h4>MANAGER</h4>
-									<?
-								}
-								else
-								{
-									?>
-										<h4>STAFF</h4>
-									<?
-								}
-								?>
+						
+									
+							<h4><? echo $_SESSION['user_name']; ?></h4>
+								
+						
 							</li>
                             <li class="nav-user dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">
-                                <img src="images/jordan.jpg" class="nav-avatar" />
+                                <img src="images/<? echo $_SESSION['id']; ?>.jpg" class="nav-avatar" />
                                 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="">Your Profile</a></li>
-                                    <li><a href="">Change Password</a></li>
+                                    <li><a href="Change_Password.php">تغير كلمة المرور</a></li>
                                     <li class="divider"></li>
-               									<?
-									if($_SESSION['Priv']=='S')
-									{
-									?>
-										<form action="Print_Bill_Day.php"  method="post" >
+							
+							
+										<form action="index.php"  method="post" >
 										<li>
-											<button type="submit" name="Logout" class="btn btn-primary pull-center">Logout <i class="icon-signout"></i> Print Bill Today <i class="icon-print"></i></button>
+											<button type="submit" name="Logout" class="btn btn-primary pull-center">تسجيل الخروج <i class="icon-signout"></i>  طباعة فاتورة اليوم  <i class="icon-print"></i></button>
 										</li>
 										</form>
-									<?
-									}
-									else
-									{
-									?>
-										<li><a href="index.php">Logout</a></li>
-									<?
-									}
-									?>
+						
                                 </ul>
                             </li>
                         </ul>

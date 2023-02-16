@@ -87,28 +87,14 @@ function check($conn)
 				$_SESSION['id']=$Test3->id;
 				$_SESSION['name']=$Test3->name;
 				$_SESSION['user_name']=$Test3->User_Name;
+				$_SESSION['Password']=$Test3->Password;
 				$_SESSION['Priv']=$Test3->Priv;
 				
 				
 				$New_Date=date ("Y-m-d", time() + 2 * 3600);
 				
 				
-				/*$Search_Date= $conn->query("SELECT * FROM Sales_Bills where Date>='$New_Date 00:00:00' And Date<='$New_Date 23:59:59'");
-				if($N_Date=$Search_Date->fetch(PDO::FETCH_OBJ))	
-				{
-					header('Location: http://localhost/Nike Saraya/Control%20Panel.%7b21EC2020-3AEA-1069-A2DD-08002B30309D%7d/Home.php');
-				}
-				else IF($User->Priv==S)
-				{
-					$New_Date=date ("Y-m-d H:i:s", time() + 2 * 3600);
-					
-					$sql_insert_new_date="INSERT INTO Sales_Bills (Date,Total_Price) VALUES ('$New_Date','0')";
-					$conn->exec($sql_insert_new_date);
-					
-					header('Location: http://localhost/Nike Saraya/Control%20Panel.%7b21EC2020-3AEA-1069-A2DD-08002B30309D%7d/Home.php');
-					
-				}*/
-				header('Location: http://localhost/Nike/Home.php');
+				header('Location: Home.php');
 			}
 			else
 			{

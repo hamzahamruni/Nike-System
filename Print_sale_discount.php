@@ -91,7 +91,7 @@ if(!$_SESSION['Logout'])
 		$total_price=$total->fetch(PDO::FETCH_OBJ);	
 		if(!(isset($total_price->total_price)))
 		{
-			header('Location: http://localhost/Nike/Sale_dis_ch.php');
+			header('Location: Sale_dis_ch.php');
 		}
 		
 		if((isset($_POST['total_p'])))
@@ -263,7 +263,7 @@ if(!$_SESSION['Logout'])
 	}
 	else
 	{
-		header('Location: http://localhost/Nike/Home.php');
+		header('Location: Home.php');
 	}
 	
 	?>
@@ -288,5 +288,5 @@ if(!$_SESSION['Logout'])
 }
 else
 {
-	header('Location: http://localhost/Nike/index.php');
+	header('Location: index.php');
 }

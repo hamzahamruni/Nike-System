@@ -228,7 +228,7 @@ function insert($conn)
 				else
 				{
 					$_SESSION['Flag_Add_Calss']= -1;
-					header('Location: http://localhost/Nike/Add.php');
+					header('Location: Add.php');
 				}
 			
 		}	
@@ -237,7 +237,7 @@ function insert($conn)
 			echo $sql , $e->getMessage();
 		}
 		$conn = null;
-		header('Location: http://localhost/Nike//Add.php');
+		header('Location: Add.php');
 		
 
 }
@@ -501,6 +501,6 @@ else
 }
 else
 {
-		header('Location: http://localhost/Nike/index.php');
+		header('Location: index.php');
 
 }

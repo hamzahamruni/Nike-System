@@ -237,5 +237,5 @@ if(!$_SESSION['Logout'])
 }
 else
 {
-	header('Location: http://localhost/Nike/index.php');
+	header('Location: index.php');
 }

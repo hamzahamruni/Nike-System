@@ -221,7 +221,7 @@ function insert($conn)
 			echo $sql , $e->getMessage();
 		}
 		$conn = null;
-		//header('Location: http://localhost/Nike//users.php');
+		//header('Location: users.php');
 		
 
 }
@@ -511,6 +511,6 @@ else
 }
 else
 {
-		header('Location: http://localhost/Nike/index.php');
+		header('Location: index.php');
 
 }

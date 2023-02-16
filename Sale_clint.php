@@ -735,5 +735,5 @@ else
 }
 else
 {
-	header('Location: http://localhost/Nike/index.php');
+	header('Location: index.php');
 }
